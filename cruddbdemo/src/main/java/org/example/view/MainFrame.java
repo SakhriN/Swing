@@ -1,6 +1,7 @@
 package org.example.view;
 
 import org.example.view.dialog.DeleteDialog;
+import org.example.view.dialog.DisplayDialog;
 import org.example.view.dialog.InsertDialog;
 import org.example.view.dialog.UpdateDialog;
 
@@ -85,7 +86,15 @@ public class MainFrame extends JFrame {
            }
        });
 
-
+       btnDisplay.addActionListener(new ActionListener() {
+           @Override
+           public void actionPerformed(ActionEvent e) {
+               DisplayDialog dialog = new DisplayDialog();
+//                dialog.setDefaultCloseOperation(JDialog.EXIT_ON_CLOSE);
+               dialog.setLocationRelativeTo(jPanel);
+               dialog.setVisible(true);
+           }
+       });
 
 
 

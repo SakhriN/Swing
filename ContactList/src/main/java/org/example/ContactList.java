@@ -129,6 +129,7 @@ public class ContactList {
         inputmail.setText("");
         group.clearSelection();
 
+
     }
 
 }

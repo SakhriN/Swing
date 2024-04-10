@@ -42,7 +42,7 @@ public class ContactDao {
             ps = con.prepareStatement("SELECT * FROM `contact`");
             ResultSet resultSet = ps.executeQuery();
             while (resultSet.next()) {
-                Contact contact = null;
+                Contact contact = new Contact();
                 contact.setId(resultSet.getInt("id"));
                 contact.setName(resultSet.getString("name"));
                 contact.setNumber(resultSet.getString("number"));

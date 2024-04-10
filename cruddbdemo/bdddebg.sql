@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS cruddbswing;
+
+USE cruddbswing;
+
+CREATE TABLE contact (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(50),
+number VARCHAR(10)
+);

@@ -19,7 +19,7 @@ public class DepartementDAO {
     public Departement getOneDepartement(int id) {
         con = ConnexionDB.getConnection();
         try {
-            ps = con.prepareStatement("SELECT * FROM `departement` WHERE `id`= ? ");
+            ps = con.prepareStatement("SELECT * FROM `departement` WHERE `id` = ? ");
             ps.setInt(1, id);
             ResultSet resultSet = ps.executeQuery();
             if(resultSet.next()){

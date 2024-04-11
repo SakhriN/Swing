@@ -13,4 +13,5 @@ public class Salarie {
 
     Role role;
 
+
 }
